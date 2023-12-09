@@ -1,0 +1,191 @@
+.tic-tac-toe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  
+  .board-row {
+    display: flex;
+  }
+  .test1{
+    font-size: 50px;
+    
+  }
+  .blue-emoji {
+    color: blue;
+  }
+  .square {
+    font-size: 2em;
+    width: 3em;
+    height: 3em;
+    margin: 0.2em;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.7);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  
+    &:hover {
+      background: #fff;
+      color: #333;
+    }
+  }
+  
+  .status {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  /* Animation for squares */
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .square.win {
+    animation: scaleUp 0.5s ease-in-out;
+    background: #4caf50; /* Green color for winning squares */
+    color: #fff;
+  }
+  
+  /* Animation for the whole board */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .tic-tac-toe.win {
+    animation: rotate 1s linear;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,44,51,0.31976540616246496) 100%, rgba(0,212,255,1) 100%),url("./auth/back.jpg");
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  /***Animated title***/
+.test{
+
+    font-size: 13rem;
+    font-weight: bold;
+    background: rgb(0,81,255);
+    background: linear-gradient(180deg, #fee108 0%, #fa709a 95%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: border-box;
+    animation-name: st2;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    position:relative;
+    font-family:  "Tictac W01 Toe";;
+  }
+  
+  
+  @keyframes st2 {
+    0% {
+      opacity: 0;
+      background: rgb(53,50,115);
+      background: linear-gradient(90deg, rgba(53,50,115,1) 0%, rgba(0,212,255,1) 76%, rgba(31,133,204,0.31976540616246496) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+      left:-500px;
+    }
+  
+    100% {
+      opacity: 1;
+      background: rgb(53,50,115);
+      background: linear-gradient(90deg, rgba(53,50,115,1) 0%, rgba(0,212,255,1) 76%, rgba(31,133,204,0.31976540616246496) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+      left:0;
+  }
+    }
+  
+  
+  /**Body*/
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+  
+  h1 {
+    color: #f1c40f;
+    font-size: 4rem;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .btn {
+
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: inline-block;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  
+
+  .third {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    transition: all 150ms ease-in-out;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+  
+  
+  
+  

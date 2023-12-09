@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+.navigation {
+  width: 100%;
+  background-color: #3498db;
+}
+
+i {
+  width: 25px;
+  border-radius: 50px;
+  float: left;
+  color: black;
+}
+
+.logout {
+  font-size: .8em;
+  font-family: 'Oswald', sans-serif;
+	position: relative;
+  right: -10px;
+  bottom: -4px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  opacity: 0;
+  transition: opacity .45s;
+  -webkit-transition: opacity .35s;
+  
+}
+
+.button {
+	text-decoration: none;
+	float: left;
+  padding: 12px;
+  margin-top: -140px;
+  margin-left: -250px;
+  color: white;
+  width: 25px;
+  background-color: #3498db;
+  transition: width .35s;
+  -webkit-transition: width .35s;
+  overflow: hidden
+}
+
+a:hover {
+  width: 100px;
+}
+
+a:hover .logout{
+  opacity: .9;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,44,51,0.31976540616246496) 100%, rgba(0,212,255,1) 100%),url("./auth/back.jpg");
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  /***Animated title***/
+.test{
+
+    font-size: 10rem;
+    font-weight: bold;
+    background: rgb(0,81,255);
+    background: linear-gradient(180deg, #fee108 0%, #fa709a 95%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: border-box;
+    animation-name: st2;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    position:relative;
+    font-family:  "Tictac W01 Toe";;
+  }
+  
+  
+  @keyframes st2 {
+    0% {
+      opacity: 0;
+      background: rgb(53,50,115);
+      background: linear-gradient(90deg, rgba(53,50,115,1) 0%, rgba(0,212,255,1) 76%, rgba(31,133,204,0.31976540616246496) 100%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      left:-500px;
+    }
+  
+    100% {
+      opacity: 1;
+      background: rgb(53,50,115);
+      background: linear-gradient(90deg, rgba(53,50,115,1) 0%, rgba(0,212,255,1) 76%, rgba(31,133,204,0.31976540616246496) 100%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      left:0;
+  }
+    }
+  
+  
+  /**Body*/
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+  
+  h1 {
+    color: #f1c40f;
+    font-size: 4rem;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: inline-block;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  
+
+  .third {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    transition: all 150ms ease-in-out;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+  
+  
+  
+  
